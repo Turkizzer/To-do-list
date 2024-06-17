@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,63 +9,152 @@
   <body class="bg-primary">
     <header>
       <div
-        class="text-white flex font-semibold text-sm justify-evenly w-auto h-16 bg-navbar lg:justify-start gap-x-10"
+        class="text-white flex font-semibold text-sm h-16 justify-center bg-navbar lg:justify-start md:gap-x-28 gap-x-14"
       >
-        <p class="mt-5 ml-40 text-lg">Home</p>
-        <p class="mt-5 text-lg">Add task</p>
-        <p class="mt-5 text-lg ">My tasks</p>
+        <a class="mt-5 ml-10 text-lg lg:ml-40">Home</a>
+        <a href="#show" class="mt-5 text-lg">Add task</a>
+        <a href="mytask.html" class="mt-5 text-lg">My tasks</a>
       </div>
     </header>
     <main>
-      <div class=" ml-10 min-w-80 min-h-12 rounded-full bg-color2 mt-14 md:w-[555px] md:m-auto md:mt-14 lg:w-[1180px] lg:h-[170px] lg:mt-32">
-        <p class="text-start text-3xl font-bold lg:text-[70px] pt-14 pl-3">Start your day here!</p>
+      <div
+        class="ml-10 min-w-80 min-h-12 rounded-full bg-color2 mt-14 md:w-[555px] md:m-auto md:mt-14 lg:w-[1190px] lg:h-[170px] lg:mt-32 lg:ml-32"
+      >
+        <p class="text-start text-3xl font-bold lg:text-[70px] p-4 lg:pt-16">
+          Start your day here!
+        </p>
       </div>
-<!--images-->
+      <!-- Images -->
       <div class="mt-9 ml-16 md:ml-64 lg:flex lg:ml-52">
-        <div class="flex gap-x-8 ">
-          <img class="w-28 h-24 rounded-full lg:w-48 lg:h-32 " src="images/bike.jpg" alt="" />
-          <img class="w-28 h-24 rounded-full lg:w-48 lg:h-28 lg:ml-[18px]" src="images/zumba.jpg" alt="" />
+        <div class="flex gap-x-8">
+          <img
+            class="w-28 h-24 rounded-full lg:w-48 lg:h-32"
+            src="images/bike.jpg"
+            alt="Bike"
+          />
+          <img
+            class="w-28 h-24 rounded-full lg:w-48 lg:h-28 lg:ml-[18px]"
+            src="images/zumba.jpg"
+            alt="Zumba"
+          />
         </div>
-        <br>
         <div class="flex gap-x-8 lg:w-48 lg:h-32">
           <img
             class="w-28 h-24 rounded-full lg:w-36 lg:h-32 lg:ml-[35px]"
             src="images/kids-jumping-swimming-pool-happy-little-girl-boy-holding-hands-outdoor-tropical-resort-family-summer-vacation-74693651.webp"
-            alt=""
+            alt="Kids Jumping in Pool"
           />
-          <img class="w-28 h-24 rounded-full lg:w-48 lg:h-32 lg:ml-[15px]" src="images/work.jpg" alt="" />
+          <img
+            class="w-28 h-24 rounded-full lg:w-48 lg:h-32 lg:ml-[15px]"
+            src="images/work.jpg"
+            alt="Work"
+          />
         </div>
-        <br />
-        <img class="w-28 h-24 rounded-full ml-[70px] lg:w-48 lg:h-32 lg:ml-[280px] " src="images/study.jpg" alt="" />
+        <img
+          class="w-28 h-24 rounded-full ml-[70px] lg:w-48 lg:h-32 lg:ml-[280px]"
+          src="images/study.jpg"
+          alt="Study"
+        />
       </div>
-
-      <button class=" ml-[145px] p-2 pl-2 pr-2 mt-3 font-bold text-sm bg-color2 rounded-full md:ml-[335px]">
+      <button
+        id="show"
+        class="ml-[145px] p-2 mt-3 font-bold text-sm bg-color2 rounded-full md:ml-[335px] lg:ml-[670px] lg:w-40 lg:h-12 lg:text-lg lg:mt-7"
+      >
         Add my task
       </button>
-    </main>
-
-    <footer class="w-auto  h-20 mt-16 bg-navbar lg:h-32">
-    <p class="text-2xl font-semibold ml-16  text-white md:ml-52">Contact Us</p>
-    
-    <div class="flex mt-2 justify-center lg:flex-col">
-
-    <div class="flex">
-    <img  class="size-4 rounded-full ml-16 "src="images/fb.jpg" alt="">
-    <p class="text-white font-semi-bold ml-1 text-[11px]">Facebook</p>
-    </div>
-    <div class="flex">
-    <img id="fb" class="size-4 rounded-full ml-3"src="images/insta.jpg" alt="">
-    <p class="text-white font-semi-bold ml-1 text-[11px]">Instagram</p>
-    </div>
-    <div class="flex">
-        <img id="fb" class="size-4 rounded-full ml-3"src="images/twitter.jpg" alt="">
-        <p class="text-white font-semi-bold ml-1 text-[11px]">Twitter</p>
+      <!--for adding-->
+      <div
+        id="pakita"
+        class="container h-full w-full bg-black bg-opacity-60 absolute top-0 items-center justify-center hidden"
+      >
+        <div class="w-[250px] h-[250px] bg-white rounded-lg lg:w-[500px]">
+          <p class="text-black text-lg font-bold text-center mt-3">
+            Add you task here
+          </p>
+          <input
+            class="ml-9 mt-10 border-2 border-black lg:w-96"
+            placeholder="Type here..."
+            type="text"
+          /><br />
+          <button class="bg-red-600 rounded mt-1 ml-9 p-1" id="cancel">
+            Cancel
+          </button>
+          <button id="add" class="bg-green-500 rounded mt-1 ml-1 p-1">
+            Add
+          </button>
         </div>
-        <div class="flex">
-            <img id="fb" class="size-4 rounded-full ml-3"src="images/th.jpg" alt="">
+      </div>
+    </main>
+    <footer class="w-auto h-20 mt-16 bg-navbar lg:h-32">
+      <p class="text-2xl font-semibold ml-16 lg:ml-40 text-white md:ml-52">
+        Contact Us
+      </p>
+      <div class="flex mt-2 justify-center">
+        <div class="flex lg:flex-col lg:ml-40 lg:mt-3">
+          <div class="flex">
+            <img
+              class="size-4 rounded-full ml-16 lg:ml-1"
+              src="images/fb.jpg"
+              alt="Facebook"
+            />
+            <p class="text-white font-semi-bold ml-1 text-[11px]">Facebook</p>
+          </div>
+          <div class="flex lg:mt-2">
+            <img
+              class="size-4 rounded-full ml-3 lg:ml-1"
+              src="images/insta.jpg"
+              alt="Instagram"
+            />
+            <p class="text-white font-semi-bold ml-1 text-[11px]">Instagram</p>
+          </div>
+        </div>
+        <div class="flex lg:hidden">
+          <div class="flex">
+            <img
+              class="size-4 rounded-full ml-3"
+              src="images/twitter.jpg"
+              alt="Twitter"
+            />
+            <p class="text-white font-semi-bold ml-1 text-[11px]">Twitter</p>
+          </div>
+          <div class="flex lg:mt-3">
+            <img
+              class="size-4 rounded-full ml-3"
+              src="images/th.jpg"
+              alt="Youtube"
+            />
             <p class="text-white font-semi-bold ml-1 text-[11px]">Youtube</p>
-            </div>
-  
+          </div>
+        </div>
+        <!--for responsiveness in lg-->
+        <div class="hidden lg:block lg:ml-32 lg:mt-3">
+          <div class="flex">
+            <img
+              class="size-4 rounded-full ml-3"
+              src="images/twitter.jpg"
+              alt="Twitter"
+            />
+            <p class="text-white font-semi-bold ml-1 text-[11px]">Twitter</p>
+          </div>
+          <div class="flex lg:mt-2">
+            <img
+              class="size-4 rounded-full ml-3"
+              src="images/th.jpg"
+              alt="Youtube"
+            />
+            <p class="text-white font-semi-bold ml-1 text-[11px]">Youtube</p>
+          </div>
+        </div>
+
+        <p class="hidden lg:block mt-3 ml-52 text-white">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias
+          assumenda neque exercitationem blanditiis, minus nesciunt placeat
+          deleniti maiores sit? Nihil velit rerum veritatis voluptatem aut
+          dolores repudiandae odit minus beatae?
+        </p>
+      </div>
     </footer>
+
+    <script src="index.js"></script>
   </body>
 </html>
