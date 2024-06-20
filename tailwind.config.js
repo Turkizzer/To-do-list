@@ -8,9 +8,7 @@ module.exports = {
         color2: "#C9CCC6",
         navbar: "#555555",
       },
-      opacity:{
-        6:"0.06"
-      },
+    
     },
   },
   plugins: [],
